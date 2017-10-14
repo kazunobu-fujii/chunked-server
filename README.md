@@ -10,11 +10,11 @@ $ go run main.go -t "application/json; charset=utf-8" -d response.dat
 
 # Command Line Options
 
-### -c <size>
+### -c [size]
 
 chunk size (default 8)
 
-### -d <filename>
+### -d [filename]
 
 response body (default "response.dat")
 
@@ -22,15 +22,14 @@ response body (default "response.dat")
 
 disable chunk mode
 
-### -t <content-type>
+### -t [content-type]
 
 content type (default "text/html; charset=UTF-8")
 
-### -s <server>
+### -s [server]
 
 listening server (default "localhost:8080")
 
-### -w <delay(ms)>
+### -w [delay]
 
 chunk delay (ms) (default 10)
-
