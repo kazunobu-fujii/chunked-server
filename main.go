@@ -63,7 +63,7 @@ func newTask() *task {
 
 func (t *task) main() error {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		t.Logger.Print("request /")
+		t.Logger.Printf("request %v %v\n", r.Method, r.URL.Path)
 
 		w.Header().Set("Content-Type", t.flags.t)
 
